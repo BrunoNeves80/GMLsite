@@ -1,0 +1,254 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.nome nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    font-weight: bold;
+}
+
+.nome nav > a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+    font-size: 2rem; /* Alterado para usar rem para melhor escalabilidade */
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: 5px;   
+}
+
+.nome nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem; /* Alterado para usar rem para melhor escalabilidade */
+    width: 100%;
+}
+
+.nome nav ul li {
+    
+    text-align: center;
+    padding: 10px 50px;
+    list-style: none;
+    
+}
+
+.nome nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.nome nav ul li a:hover {
+    color: black;
+}
+
+.search {
+    display: flex; /* Para os elementos ficarem na mesma linha */
+    align-items: center; /* Para centralizar verticalmente */
+    justify-content: flex-end; /* Para posicionar os itens à direita */
+}
+
+.search input[type=text] {
+    width: 185px; /* Redimensionado para torná-lo mais responsivo */
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    margin-right: -50px; /* Ajustado para adicionar espaço entre a entrada de texto e o botão */
+}
+
+.search button {
+    background-color: transparent;
+    color: black;
+    padding: 20px; /* Ajuste o preenchimento para aumentar a área clicável do botão */
+    font-size: 1.5rem; /* Alterado para usar rem para melhor escalabilidade */
+    border: none;
+    cursor: pointer;
+}
+
+#historia {
+    background-image: url('../img/so_logo.jpg'); 
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: rgb(176, 178, 176); /* Define a cor do texto para garantir visibilidade */
+    display: flex; /* Define o layout de exibição como flexível */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: flex-end;
+    justify-content: flex-end; /* Alinha os itens no final */
+    text-align: justify; /* Centraliza o texto */
+    padding: 20px; /* Adiciona preenchimento interno */
+    background-color: black;
+    
+}  
+
+#historia p {
+    margin-bottom: 2.5em; /* Define a margem inferior */
+    max-width: 750px; /* Define a largura máxima */
+    line-height: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+
+}
+
+#titulo-historia h1 {
+    display: flex; /* Define o layout de exibição como flexível */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    color: red;
+    align-items: center;
+    background-color: black;
+    margin: 0 0;
+    padding-top : 30px;
+
+}
+     
+.button {
+    color: rgb(0, 0, 0); /* Define a cor do texto para os botões */
+    text-decoration: none; /* Remove decoração de texto (sublinhado) */
+    padding: 10px 30px; /* Define o preenchimento interno dos botões */
+    background-color: red; /* Define a cor de fundo dos botões */
+    font-size: .9em; /* Define o tamanho da fonte */
+    border-radius: 7px; /* Adiciona cantos arredondados aos botões */
+    font-family: "Lucida Console", "Courier New", monospace; /* Define a família de fontes para os botões */
+    font-weight: bold; /* Define o peso da fonte */
+    -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte em navegadores WebKit */
+    -moz-osx-font-smoothing: grayscale; /* Melhora a renderização da fonte no Firefox no macOS */
+    text-rendering: optimizeLegibility; /* Melhora a legibilidade do texto */
+}
+
+#button-historia {
+    background-color: black;
+    display: flex; /* Torna a seção um container flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding-bottom: 20px;
+}
+
+#direcao {
+    padding: 20px; /* Adiciona preenchimento interno */
+    display: flex; /* Define o layout de exibição como flexível */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+#direcao div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+ /* galeria */
+
+ #galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+    background-color: rgb(247, 4, 4);
+}
+
+#galeria h2 {
+    margin-bottom: 50px;
+}
+
+#galeria img {
+    width: 150px;
+    transition: width 0.3s;
+    margin: 5px;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#imagem-modal {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#contatos {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Adiciona preenchimento */
+    background-color: #4d4d4d; /* Define a cor de fundo */
+    color: #f1f1f1; /* Define a cor do texto */
+    font-size: 25px;
+}
+
+
+/* colocar site responsivo*/
+@media screen and (min-width: 768px) {
+
+    .nome nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .nome nav ul {
+        flex-direction: row; /* Define a direção dos itens como linha */
+        width: 70%;
+    }
+
+    .nome search {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /* Portfolio */
+    #galeria {
+        flex-direction: row; /* Define a direção dos itens como linha */
+        flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
+    }
+
+    #galeria h2 {
+        width: 100%; /* Define a largura como 100% */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #galeria img {
+        width: 20%; /* Define a largura como 33% */
+    }
+
+    #contatos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contatos h2, 
+    #contatos p {
+        width: 100%;
+        font-size: 25px;
+    }
+
+}
