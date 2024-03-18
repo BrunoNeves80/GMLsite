@@ -94,10 +94,11 @@ body {
 
 #historia p {
     margin-bottom: 2.5em; /* Define a margem inferior */
-    max-width: 750px; /* Define a largura máxima */
+    max-width: 850px; /* Define a largura máxima */
     line-height: 2;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
+    margin-right: 200px;
 
 }
 
