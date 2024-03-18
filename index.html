@@ -22,7 +22,7 @@
                             <li> <a href="#contatos"><i class="fa fa-address-book"></i> Contatos </a> </li>
                              <!-- search bar right align -->
                             <li class="search">
-                                <input type="text" placeholder="Pesquisar..." name="search" autocomplete="on" spellcheck="false" autocorrect="off">
+                                <input type="text" placeholder="Pesquisar..." name="search" autocomplete="on" spellcheck="false" autocorrect="off" oninput="searchFunction()">
                                 <button>
                                     <i class="fa fa-search" ></i>
                                 </button> 
@@ -125,6 +125,26 @@
             function fecharImagem() {
                 document.getElementById("modal").style.display = "none";
             }
+
+            function fecharImagem() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        function searchFunction() {
+            var input, filter, sections, i, txtValue;
+            input = document.querySelector('input[name="search"]');
+            filter = input.value.toUpperCase();
+            sections = document.getElementsByTagName("section");
+
+            for (i = 0; i < sections.length; i++) {
+                txtValue = sections[i].textContent || sections[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    sections[i].style.display = "";
+                } else {
+                    sections[i].style.display = "none";
+                }
+            }
+        }
         </script>
         
         <section id="contatos">
