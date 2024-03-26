@@ -189,12 +189,29 @@ body {
 }
 
 #contatos {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+    align-items: center;
     text-align: center;
-    padding-top: 20px;
+
 }
+
+.map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1.45rem;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+#contatos .contact {
+   padding: 1rem;
+   width: 50rem;
+   height: auto;
+}
+
 
 footer {
     text-align: left; /* Centraliza o texto */
@@ -238,15 +255,9 @@ footer {
         width: 20%; /* Define a largura como 33% */
     }
 
-    #contatos {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 500px;
-        margin: 0 auto;
-    }
+   
 
-    #contatos h2, 
+    #contatotitle h2, 
     #contatos p {
         width: 100%;
         font-size: 25px;
