@@ -189,9 +189,31 @@ body {
 }
 
 #contatos {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     align-items: center;
     text-align: center;
     padding-top: 20px;
+
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1.45rem;
+    object-fit: cover;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+#contatos .contact {
+   padding: 2rem;
+   width: 50rem;
+   height: auto;
 }
 
 footer {
@@ -240,7 +262,6 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 500px;
         margin: 0 auto;
     }
 
