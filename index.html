@@ -115,37 +115,8 @@
             <img id="imagem-modal" src="" alt="Imagem modal">
         </div>
 
-        <script>
-            function abrirImagem(elemento) {
-                var imagemModal = document.getElementById("imagem-modal");
-                imagemModal.src = elemento.src;
-                document.getElementById("modal").style.display = "flex";
-            }
-        
-            function fecharImagem() {
-                document.getElementById("modal").style.display = "none";
-            }
-
-            function fecharImagem() {
-            document.getElementById("modal").style.display = "none";
-        }
-
-        function searchFunction() {
-            var input, filter, sections, i, txtValue;
-            input = document.querySelector('input[name="search"]');
-            filter = input.value.toUpperCase();
-            sections = document.getElementsByTagName("section");
-
-            for (i = 0; i < sections.length; i++) {
-                txtValue = sections[i].textContent || sections[i].innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    sections[i].style.display = "";
-                } else {
-                    sections[i].style.display = "none";
-                }
-            }
-        }
-        </script>
+        <script src="js/showImages.js"></script>
+        <script src="js/serachBar.js"></script>
         
         <section id="contatos">
 			<h2 id="contatostitle"> CONTATOS </h2>
