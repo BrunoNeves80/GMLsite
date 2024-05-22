@@ -1,144 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial.scale=1.0">
-        <title>G.M.Lamacense</title>
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <!-- Load an icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
-        <link rel="icon" href="img/so_logo.jpg">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial.scale=1.0" />
+    <title>G.M.Lamacense</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!-- Load an icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="assets/img/so_logo.jpg" />
+  </head>
+  <body>
+    <script src="js/showImages.js"></script>
+    <script src="js/searchBar.js"></script>
 
-        <script src="js/showImages.js"></script>
-        <script src="js/searchBar.js"></script>
-
-        <header class="menu-principal">
-            <div class="header1">
-                <div class="nome">
-                    <nav>
-                        <a href="#"> GRUPO MOTARD LAMACENSE</a>
-                        <ul>
-                            <li> <a href="#historia"><i class="fa fa-book"></i> História </a></li>
-                            <li> <a href="#direcao"><i class="fa fa-users"></i> Direção </a></li>
-                            <li> <a href="#galeria"><i class="fa fa-image"></i> Galeria  </a></li>
-                            <li> <a href="#contatos"><i class="fa fa-address-book"></i> Contatos </a> </li>
-                             <!-- search bar right align -->
-                            <li class="search">
-                                <input type="text" placeholder="Pesquisar..." name="search" autocomplete="on" spellcheck="false" autocorrect="off" oninput="searchFunction()">
-                                <button>
-                                    <i class="fa fa-search" ></i>
-                                </button> 
-                            </li>
-                        </ul>
-                    </nav> 
-                </div>
-            </div>
-        </header> 
-        
-        <section id="titulo-historia">
-            <div class="titulohist">
-                <h1> HISTÓRIA </h1>
-            </div>
-        </section>
-        <section id="historia" class="grid-container">
-            
-            <div class="content">
-                <div class="txthistoria">
-                    <p>Aqui fica a hisrória do grupo- quem foram os fundadores e como surgiu a ideia.
-                        exemplo: Após adicionar uma imagem de fundo e evitar que ela se repita, 
-                        podemos controlar sua colocação no segundo plano do elemento, melhorando seu posicionamento.
-
-                        Usaremos a propriedade background-position para fazer isso.
-                        
-                        O seletor recebe dois valores. O primeiro valor é a posição na horizontal, ou no eixo x. 
-                        O segundo é a posição na vertical, ou no eixo y.
-                        
-                        Esses valores podem ser expressos em unidades, como em pixels:
-                        Com a propriedade background-attachment, podemos controlar onde a imagem de fundo está colocada, 
-                        o que significa saber se a imagem estará fixa ou não com relação ao navegador.
-
-                        O valor padrão background-attachment: scroll;, onde a imagem de fundo permanece com seu elemento e 
-                        segue o fluxo natural da página, 
-                        rolando para cima e para baixo quando fazemos isso com a página.
-
-                        O segundo valor que a propriedade pode ter é background-attachement: fixed;.
-                        Isso faz com que a imagem de fundo permaneça na mesma posição, fixada à página e 
-                        à viewport do navegador. Isso cria um efeito parallax. Você pode ver um exemplo disso aqui:
-                    </p>
-                </div>
-            </div> 
-        </section>
-
-        <section id="button-historia">
-            <a href="#contatos" class="button"> Entre em contato </a>     
-        </section>
-
-        <section id="direcao">
-            <!-- aqui aas fotos dos elementos da direcao -->
-            <h1>DIREÇÃO</h1>  
-            <div>
-                <img src="img/tec.png" alt="presidente">
-                <p> Bruno Alves </p>
-                <h2>Presidente</h2>
-            </div>    
-            
-            <div>
-                <img src="img/tec2.jpg" alt="vicepresidente">
-                <h2>Vice-Presidente</h2>
-                <p> Bruno Soares </p>
-            </div> 
-
-            <div>
-                <h3>Tesoureiro</h3>
-                <img src="img/tec3.png" alt="Tesoureiro">
-                <p> José Miguel </p>
-            </div> 
-        </section>
-
-        <section id="galeria">
-            <h2> GALERIA </h2>	
-            <img src="img/logotipoantigo.jpg" alt="logotipo antigo" onclick="abrirImagem(this)">
-            <img src="img/GML_logo.jpg" alt="GML logo" onclick="abrirImagem(this)">
-            <img src="img/21anos.jpg" alt="21 anos" onclick="abrirImagem(this)">
-            <img src="img/outubro2023.jpg" alt="outubro 2023" onclick="abrirImagem(this)"> 
-            <img src="img/outubro2023_1.jpg" alt="concerto tekos" onclick="abrirImagem(this)">
-            <img src="img/penedono2023.jpg" alt="penedono 2023" onclick="abrirImagem(this)">
-            <img src="img/penedono2023_1.jpg" alt="penedono2023_1" onclick="abrirImagem(this)">
-            <img src="img/lousada2023.jpg" alt="lousada 2023" onclick="abrirImagem(this)">
-            <img src="img/sanabria2023.jpg" alt="sanabria2023" onclick="abrirImagem(this)">
-            <img src="img/chaveskm0.jpg" alt="chaveskm0" onclick="abrirImagem(this)">
-            <img src="img/penedono2023_2.jpg" alt="penedono2023_2" onclick="abrirImagem(this)">
-            <img src="img/abencoados 2024.jpg" alt="abencoados" onclick="abrirImagem(this)">
-            <img src="img/lobosdaneve2024.jpg" alt="lobosdaneve2024" onclick="abrirImagem(this)">
-            <img src="img/saoJoao2023.jpg" alt="saoJoao2023" onclick="abrirImagem(this)"> 
-        </section>
-
-        <div id="modal" onclick="fecharImagem()">
-            <img id="imagem-modal" src="" alt="Imagem modal">
+    <header class="menu-principal">
+      <div class="header1">
+        <div class="nome">
+          <nav>
+            <a href="#"> GRUPO MOTARD LAMACENSE</a>
+            <ul>
+              <li>
+                <a href="#historia"><i class="fa fa-book"></i> História </a>
+              </li>
+              <li>
+                <a href="#direcao"><i class="fa fa-users"></i> Direção </a>
+              </li>
+              <li>
+                <a href="#galeria"><i class="fa fa-image"></i> Galeria </a>
+              </li>
+              <li>
+                <a href="#contatos"
+                  ><i class="fa fa-address-book"></i> Contatos
+                </a>
+              </li>
+              <!-- search bar right align -->
+              <li class="search">
+                <input
+                  type="text"
+                  placeholder="Pesquisar..."
+                  name="search"
+                  autocomplete="on"
+                  spellcheck="false"
+                  autocorrect="off"
+                  oninput="searchFunction()"
+                />
+                <button>
+                  <i class="fa fa-search"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
-        
-        <section id="contatos">
-			<h2 id="contatostitle"> CONTATOS </h2>
-			<p> Entre em contato connosco </p>
-			<div class="map">
-                <!-- Seu mapa aqui -->
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.8911050103306!2d-8.580037788201674!3d40.98386527123445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24792646998bb3%3A0xf76ac02cbfe5470e!2sGrupo%20Motard%20Lamacense!5e0!3m2!1spt-PT!2spt!4v1710783275023!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="contact">
-                    <img src="img/fone.png" width="50px">
-                    <p><a href="tel:+351916920988"> +351963386663 </a></p>
-                    <img src="img/contato.png" width="50px">
-                    <p> <a href="mailto: brunogneves@hotmail.com"> GMLamacense </a></p>
-                    <img src="img/logo-facebook_icon.png" alt="facebook" width="50px">
-                    <p><a href="https://www.facebook.com/grupomotard.lamacense/"> https://www.facebook.com/grupomotard.lamacense/ </a></p>
-                </div>
-            </div>
-            
-		</section>
+      </div>
+    </header>
 
-		<footer>
-			<p class="text-white" ><i class="fa fa-copyright" aria-hidden="true"></i> 2024 Bruno Neves </p>
-		</footer>
-    </body>
+    <section id="titulo-historia">
+      <div class="titulohist">
+        <h1>HISTÓRIA</h1>
+      </div>
+    </section>
+    <section id="historia" class="grid-container">
+      <div class="content">
+        <div class="txthistoria">
+          <p>
+            Aqui fica a hisrória do grupo- quem foram os fundadores e como
+            surgiu a ideia. exemplo: Após adicionar uma imagem de fundo e evitar
+            que ela se repita, podemos controlar sua colocação no segundo plano
+            do elemento, melhorando seu posicionamento. Usaremos a propriedade
+            background-position para fazer isso. O seletor recebe dois valores.
+            O primeiro valor é a posição na horizontal, ou no eixo x. O segundo
+            é a posição na vertical, ou no eixo y. Esses valores podem ser
+            expressos em unidades, como em pixels: Com a propriedade
+            background-attachment, podemos controlar onde a imagem de fundo está
+            colocada, o que significa saber se a imagem estará fixa ou não com
+            relação ao navegador. O valor padrão background-attachment: scroll;,
+            onde a imagem de fundo permanece com seu elemento e segue o fluxo
+            natural da página, rolando para cima e para baixo quando fazemos
+            isso com a página. O segundo valor que a propriedade pode ter é
+            background-attachement: fixed;. Isso faz com que a imagem de fundo
+            permaneça na mesma posição, fixada à página e à viewport do
+            navegador. Isso cria um efeito parallax. Você pode ver um exemplo
+            disso aqui:
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="button-historia">
+      <a href="#contatos" class="button"> Entre em contato </a>
+    </section>
+
+    <section id="direcao">
+      <!-- aqui aas fotos dos elementos da direcao -->
+      <h1>DIREÇÃO</h1>
+      <div>
+        <img src="assets/img/tec.png" alt="presidente" />
+        <p>Bruno Alves</p>
+        <h2>Presidente</h2>
+      </div>
+
+      <div>
+        <img src="assets/img/tec2.jpg" alt="vicepresidente" />
+        <h2>Vice-Presidente</h2>
+        <p>Bruno Soares</p>
+      </div>
+
+      <div>
+        <h3>Tesoureiro</h3>
+        <img src="assets/img/tec3.png" alt="Tesoureiro" />
+        <p>José Miguel</p>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>GALERIA</h2>
+      <img
+        src="assets/img/logotipoantigo.jpg"
+        alt="logotipo antigo"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/GML_logo.jpg"
+        alt="GML logo"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/21anos.jpg"
+        alt="21 anos"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/outubro2023.jpg"
+        alt="outubro 2023"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/outubro2023_1.jpg"
+        alt="concerto tekos"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/penedono2023.jpg"
+        alt="penedono 2023"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/penedono2023_1.jpg"
+        alt="penedono2023_1"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/lousada2023.jpg"
+        alt="lousada 2023"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/sanabria2023.jpg"
+        alt="sanabria2023"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/chaveskm0.jpg"
+        alt="chaveskm0"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/penedono2023_2.jpg"
+        alt="penedono2023_2"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/abencoados 2024.jpg"
+        alt="abencoados"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/lobosdaneve2024.jpg"
+        alt="lobosdaneve2024"
+        onclick="abrirImagem(this)"
+      />
+      <img
+        src="assets/img/saoJoao2023.jpg"
+        alt="saoJoao2023"
+        onclick="abrirImagem(this)"
+      />
+    </section>
+
+    <div id="modal" onclick="fecharImagem()">
+      <img id="imagem-modal" src="" alt="Imagem modal" />
+    </div>
+
+    <section id="contatos">
+      <h2 id="contatostitle">CONTATOS</h2>
+      <p>Entre em contato connosco</p>
+      <div class="map">
+        <!-- Seu mapa aqui -->
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.8911050103306!2d-8.580037788201674!3d40.98386527123445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24792646998bb3%3A0xf76ac02cbfe5470e!2sGrupo%20Motard%20Lamacense!5e0!3m2!1spt-PT!2spt!4v1710783275023!5m2!1spt-PT!2spt"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="contact">
+          <img src="assets/img/fone.png" width="50px" />
+          <p><a href="tel:+351916920988"> +351963386663 </a></p>
+          <img src="assets/img/contato.png" width="50px" />
+          <p><a href="mailto: brunogneves@hotmail.com"> GMLamacense </a></p>
+          <img
+            src="assets/img/logo-facebook_icon.png"
+            alt="facebook"
+            width="50px"
+          />
+          <p>
+            <a href="https://www.facebook.com/grupomotard.lamacense/">
+              https://www.facebook.com/grupomotard.lamacense/
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="text-white">
+        <i class="fa fa-copyright" aria-hidden="true"></i> 2024 Bruno Neves
+      </p>
+    </footer>
+  </body>
 </html>
